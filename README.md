@@ -14,6 +14,10 @@ Currently included connections:
   * input: ROR
   * output: list of people affiliated with the organization, each identified by their ORCID iD
   * data sources: FREYA PID Graph, OpenAlex, ORCID
+* organization-works
+  * inout: ROR
+  * output: list of works affiliated with an organization, each identified by their DOI 
+  * data sources: Crossref, OpenAlex 
 * person-works
   * input: ORCID
   * output: list of works authored/created by the person, each identified by their DOI
@@ -22,7 +26,14 @@ Currently included connections:
   * input: DOI
   * output: list of projects the work was produced in, each identified by their OpenAIRE project ID
   * data sources: OpenAIRE
-  
+* Search for experts
+  * input: ORCID ID, OpenAlex Concept
+  * output: ORCiD ID with the respective Concepts and there concept score
+  * data source: OpenAlex
+* Search for funder informations
+  * input: ROR, ORCID, DOI
+  * output: list of DOIs and there funder informations
+  * data source: Crossref
 
 Please navigate into the respective folder to see the list of available notebooks. 
 
